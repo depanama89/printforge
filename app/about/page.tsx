@@ -35,8 +35,8 @@ export default function AboutPage() {
         </section>
         <div className="border-b border-b-gray-300"></div>
         <section className="w-full flex flex-col lg:gap-12 px-6 mx-auto  lg:px-10 lg:py-10 lg:flex-row max-w-7xl">
-          <div>
-            <div className="flex">
+          <div className=" flex flex-col gap-[18px]">
+            <div className="flex gap-[6px]" >
               <img src="/Stack.svg" alt="stack" />
               <h1>100K+ Models</h1>
             </div>
@@ -45,8 +45,8 @@ export default function AboutPage() {
               practical tools to artistic creations.
             </div>
           </div>
-          <div className="border-l border-l-[#666666] lg:pl-12">
-            <div className="flex">
+          <div className=" flex flex-col gap-[18px] border-l border-l-[#666666] lg:pl-12">
+            <div className="flex gap-[6px]">
               <img src="/GlobeSimple.svg" alt="GlobeSimple" />
               <h1>Active Community</h1>
             </div>
@@ -55,8 +55,8 @@ export default function AboutPage() {
               collaborate on projects.
             </div>
           </div>
-          <div className="border-l border-l-[#666666] lg:pl-12">
-            <div className="flex">
+          <div className=" flex flex-col gap-[18px] border-l border-l-[#666666] lg:pl-12">
+            <div className="flex gap-[6px]">
               <img src="/Flag.svg" alt="Flag" />
               <h1>Free to Use</h1>
             </div>
