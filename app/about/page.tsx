@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "../component/header";
 
 export default function AboutPage() {
@@ -6,13 +7,13 @@ export default function AboutPage() {
       <Header />
 
       <main className="flex flex-col  ">
-        <section className="flex flex-col px-6 mx-auto lg:flex-row lg:px-10">
+        <section className="flex flex-col px-6 mx-auto lg:gap-25 lg:px-10 lg:py-10 lg:flex-row max-w-7xl">
           <img
             src="/about_img.svg"
             alt="img about"
-            className="w-full h-auto md:w-[627px] md:h-[627px]"
+            className="w-full h-auto md:w-full  lg:w-[627px] lg:h-[627px]"
           />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 lg:mt-20">
             <span className="uppercase text-xl font-light">
               About printforge
             </span>
@@ -31,6 +32,39 @@ export default function AboutPage() {
           {/* <div className="flex flex-col lg:flex-row md:gap-25 md:px-10 md:py-10 lg:items-start ">
                      
           </div> */}
+        </section>
+        <div className="border-b border-b-gray-300"></div>
+        <section className="w-full flex flex-col lg:gap-12 px-6 mx-auto  lg:px-10 lg:py-10 lg:flex-row max-w-7xl">
+          <div>
+            <div className="flex">
+              <img src="/Stack.svg" alt="stack" />
+              <h1>100K+ Models</h1>
+            </div>
+            <div>
+              Access our vast library of community-created 3D models, from
+              practical tools to artistic creations.
+            </div>
+          </div>
+          <div className="border-l border-l-[#666666] lg:pl-12">
+            <div className="flex">
+              <img src="/GlobeSimple.svg" alt="GlobeSimple" />
+              <h1>Active Community</h1>
+            </div>
+            <div>
+              Join thousands of makers who share tips, provide feedback, and
+              collaborate on projects.
+            </div>
+          </div>
+          <div className="border-l border-l-[#666666] lg:pl-12">
+            <div className="flex">
+              <img src="/Flag.svg" alt="Flag" />
+              <h1>Free to Use</h1>
+            </div>
+            <div>
+              Most models are free to download, with optional premium features
+              for power users.
+            </div>
+          </div>
         </section>
       </main>
     </div>
