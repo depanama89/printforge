@@ -6,20 +6,20 @@ export default function Header() {
   return (
     <header className="h-15  ">
       <nav className="flex items-center justify-between px-5 py-3 lg:px-10  lg:py-2">
-        <img
+      <Link href="/" className=" md:hidden"> <img
           src="/printforge-logomobile.svg"
           alt="logo"
           className="block md:hidden"
-        />
-        <img
+        /></Link> 
+       <Link href="/" className="md:block"> <img
           src="/printforge-logo.svg"
           alt="logo"
           className="hidden md:block"
-        />
+        /></Link>
         <ul className="flex space-x-4 gap-6">
-          <li>3D Modele</li>
+          <li><Link href="/3d-modele"  className="text-sm uppercase">3D Modele</Link></li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" className="text-sm uppercase">About</Link>
           </li>
         </ul>
       </nav>

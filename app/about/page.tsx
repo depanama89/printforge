@@ -4,10 +4,10 @@ import Header from "../component/header";
 export default function AboutPage() {
   return (
     <div className="w-full min-h-screen flex flex-col md:gap-10">
-      <Header />
+      {/* <Header /> */}
 
       <main className="flex flex-col  ">
-        <section className="flex flex-col px-6 mx-auto lg:gap-25 lg:px-10 lg:py-10 lg:flex-row max-w-7xl">
+        <section className="flex flex-col px-6 mx-auto lg:gap-25 lg:px-10 lg:py-10 lg:flex-row max-w-7xl mb-5">
           <img
             src="/about_img.svg"
             alt="img about"
@@ -34,36 +34,58 @@ export default function AboutPage() {
           </div> */}
         </section>
         <div className="border-b border-b-gray-300"></div>
-        <section className="w-full flex flex-col lg:gap-12 px-6 mx-auto  lg:px-10 lg:py-10 lg:flex-row max-w-7xl">
-          <div className=" flex flex-col gap-[18px]">
-            <div className="flex gap-[6px]" >
-              <img src="/Stack.svg" alt="stack" />
-              <h1>100K+ Models</h1>
+        <section className="w-full flex flex-col gap-12 lg:gap-12 px-6 mx-auto  lg:px-10 lg:py-10 lg:flex-row max-w-7xl mt-5">
+          <div className=" flex flex-col gap-4">
+            <div className="flex items-center gap-2">
+              <img src="/Stack.svg" alt="stack"  className="w-6 h-6"/>
+              <h1 className="font-bold text-2xl">100K+ Models</h1>
             </div>
             <div>
               Access our vast library of community-created 3D models, from
               practical tools to artistic creations.
             </div>
           </div>
-          <div className=" flex flex-col gap-[18px] border-l border-l-[#666666] lg:pl-12">
-            <div className="flex gap-[6px]">
-              <img src="/GlobeSimple.svg" alt="GlobeSimple" />
-              <h1>Active Community</h1>
+          <div className=" flex flex-col gap-[18px] lg:border-l lg:border-l-[#666666] lg:pl-12">
+            <div className="flex items-center gap-[6px]">
+              <img src="/GlobeSimple.svg" alt="GlobeSimple"  className="w-6 h-6"/>
+              <h1 className="font-bold text-2xl">Active Community</h1>
             </div>
             <div>
               Join thousands of makers who share tips, provide feedback, and
               collaborate on projects.
             </div>
           </div>
-          <div className=" flex flex-col gap-[18px] border-l border-l-[#666666] lg:pl-12">
-            <div className="flex gap-[6px]">
-              <img src="/Flag.svg" alt="Flag" />
-              <h1>Free to Use</h1>
+          <div className=" flex flex-col gap-[18px] lg:border-l lg:border-l-[#666666] lg:pl-12">
+            <div className="flex items-center gap-[6px]">
+              <img src="/Flag.svg" alt="Flag" className="w-6 h-6" />
+              <h1 className="font-bold text-2xl">Free to Use</h1>
             </div>
             <div>
               Most models are free to download, with optional premium features
               for power users.
             </div>
+          </div>
+        </section>
+        <section className="px-6 py-12 max-w-3xl mx-auto ">
+         
+          <div className="flex flex-col gap-4">
+            <h1 className="font-bold text-3xl">Our vision</h1>
+            <p className="text-justify ">
+            At PrintForge, we believe that 3D printing is revolutionizing the
+            way we create, prototype, and manufacture. Our platform serves as a
+            bridge between designers and makers, enabling the sharing of
+            knowledge and creativity that pushes the boundaries of what's
+            possible with 3D printing.
+          </p>
+          <div className="p-5">
+            <div className="w-[245px] h-[1px] bg-gradient-to-r from-gray-500  to-black mx-auto" />
+          </div>
+          <p className="text-justify ">
+            Whether you're a hobbyist looking for your next weekend project, an
+            educator seeking teaching materials, or a professional designer
+            wanting to share your creations, PrintForge provides the tools and
+            community to support your journey in 3D printing.
+          </p>
           </div>
         </section>
       </main>

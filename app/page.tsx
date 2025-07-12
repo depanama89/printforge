@@ -4,7 +4,7 @@ import Header from "./component/header";
 export default function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col md:gap-10">
-      <Header/>
+      
       <main className="flex flex-col ">
         <section className="flex flex-col justify-between items-center gap-8 px-6 py-5 mx-auto md:flex-row max-w-7xl ">
           <div className="flex flex-col gap-5 px-5 ">
