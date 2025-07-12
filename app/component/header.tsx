@@ -21,6 +21,9 @@ export default function Header() {
           <li>
             <Link href="/about" className="text-sm uppercase">About</Link>
           </li>
+          <li>
+            <Link href="/posts" className="text-sm uppercase">Posts</Link>
+          </li>
         </ul>
       </nav>
     </header>
