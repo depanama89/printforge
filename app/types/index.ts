@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type LayoutRootProps=Readonly<{
   children: React.ReactNode;
 }>
@@ -10,4 +12,13 @@ export type Model ={
   image:string
   category:string
   dateAdded:string
+}
+
+export type ModelCardProps={
+  model:Model
+}
+
+export type PillProps={
+  children:ReactNode
+  className?:string
 }

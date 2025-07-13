@@ -17,7 +17,7 @@ export default function Header() {
           className="hidden md:block"
         /></Link>
         <ul className="flex space-x-4 gap-6">
-          <li><Link href="/3d-modele"  className="text-sm uppercase">3D Modele</Link></li>
+          <li><Link href="/3d-models"  className="text-sm uppercase">3D Modele</Link></li>
           <li>
             <Link href="/about" className="text-sm uppercase">About</Link>
           </li>
